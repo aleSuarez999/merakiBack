@@ -15,7 +15,7 @@ export const getOrganizations = async (req, res) => {
         res.json({
             ok: true,
             Count, 
-            getOrganizations: response.data
+            orgs: response.data
         })
     
     } catch (error) {
@@ -38,6 +38,29 @@ export const getNetworksByOrg = async (req, res) => {
         ok: true, 
         Count,
         networks: response.data 
+    });
+
+  } catch (error) {
+    res.status(500).json({ 
+        ok: false, 
+        msg: error.message 
+    });
+  }
+};
+
+
+
+
+export const getStatusesOverview = async (req, res) => {
+  const { orgId } = req.params;
+  console.log("getStatusesOverview", orgId)
+  try {
+    const response = await MERAKI.get(`/organizations/${orgId}/devices/statuses/overview`);
+    const Count = response.data.length
+    res.json({ 
+        ok: true, 
+        Count,
+        statuses: response.data 
     });
 
   } catch (error) {
