@@ -6,13 +6,14 @@ import organizationsRoutes from "./routes/organizations.routes.js"
 import networksRoutes from "./routes/networks.routes.js"
 import devicesRoutes from "./routes/devices.routes.js"
 import summaryRoutes from "./routes/summary.routes.js";
+import authRoutes from './routes/auth.routes.js';
 
 import cors from "cors"
 
 const server = express()
 
 const api = async() => {
-
+    console.log("JWT_SECRET:", process.env.JWT_SECRET);
     const API_PORT = (process.env.PORT || 4000 )
     
     // defino puerto en el .env
@@ -35,6 +36,7 @@ const api = async() => {
     server.use("/api/networks", networksRoutes)
     server.use("/api/devices", devicesRoutes)
     server.use("/api/summary", summaryRoutes);
+    server.use('/api', authRoutes);
 
     server.listen(API_PORT, () => {
         console.log(`el servidor está corriendo en el puerto ${API_PORT}`)
