@@ -1,0 +1,4334 @@
+{
+    "ok": true,
+    "Count": 63,
+    "networks": [
+        {
+            "networkId": "L_579838452023963197",
+            "serial": "Q2GY-L4D7-WJ5D",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:21Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.6.202",
+                    "gateway": "181.104.6.201",
+                    "publicIp": "181.104.6.202",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.7",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.81.71",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963363",
+            "serial": "Q2GY-M2YZ-4EW8",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:52Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.31.106",
+                    "gateway": "181.104.31.105",
+                    "publicIp": "181.104.31.106",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "not connected",
+                    "ip": null,
+                    "gateway": null,
+                    "publicIp": null,
+                    "primaryDns": null,
+                    "secondaryDns": null,
+                    "ipAssignedBy": null
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963487",
+            "serial": "Q2GY-M8CK-5HGX",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:19Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "190.231.173.212",
+                    "gateway": "190.231.173.209",
+                    "publicIp": "190.231.173.212",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.5",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.66.228",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963356",
+            "serial": "Q2GY-M8PT-E2K8",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:18Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.85.159.186",
+                    "gateway": "181.85.159.185",
+                    "publicIp": "181.85.159.186",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.64.67",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963481",
+            "serial": "Q2GY-M8ZA-WJKU",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:07Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.98.22.211",
+                    "gateway": "181.98.22.209",
+                    "publicIp": "181.98.22.211",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.134.217",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963373",
+            "serial": "Q2GY-MATR-27AA",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:49Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.15.142.82",
+                    "gateway": "181.15.142.81",
+                    "publicIp": "181.15.142.82",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.69",
+                    "gateway": "172.31.128.65",
+                    "publicIp": "181.9.133.255",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963753",
+            "serial": "Q2GY-MAVK-X76T",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:06Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "190.231.173.131",
+                    "gateway": "190.231.173.129",
+                    "publicIp": "190.231.173.131",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.126.109",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963364",
+            "serial": "Q2GY-MBGQ-WK5E",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:11Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.34.10",
+                    "gateway": "181.104.34.9",
+                    "publicIp": "181.104.34.10",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.5",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.190.182",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963230",
+            "serial": "Q2GY-MC2W-RXYJ",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:59Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.8.154",
+                    "gateway": "181.104.8.153",
+                    "publicIp": "181.104.8.154",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.68.81",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963729",
+            "serial": "Q2GY-MCZJ-XZLT",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:43Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.63.35",
+                    "gateway": "181.104.63.33",
+                    "publicIp": "181.104.63.35",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.5",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.77.126",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963745",
+            "serial": "Q2GY-MDMY-CQJW",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:12Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.63.210",
+                    "gateway": "181.104.63.209",
+                    "publicIp": "181.104.63.210",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.5",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.79.50",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963246",
+            "serial": "Q2GY-MGDT-Y455",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:21Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.29.82",
+                    "gateway": "181.104.29.81",
+                    "publicIp": "181.104.29.82",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.79.145",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963734",
+            "serial": "Q2GY-MGU7-2P32",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-09-15T14:54:16Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "not connected",
+                    "ip": "192.168.0.32",
+                    "gateway": "192.168.0.1",
+                    "publicIp": "186.22.245.142",
+                    "primaryDns": "100.72.3.97",
+                    "secondaryDns": "100.72.3.101",
+                    "ipAssignedBy": "dhcp"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "not connected",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.80.97",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963217",
+            "serial": "Q2GY-MMZP-FVBH",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:05:59Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "failed",
+                    "ip": "181.104.32.115",
+                    "gateway": "181.104.32.113",
+                    "publicIp": "0.0.0.0",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "failed",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.190.219",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963756",
+            "serial": "Q2GY-MNHL-JBFB",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:22Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.63.243",
+                    "gateway": "181.104.63.241",
+                    "publicIp": "181.104.63.243",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.68",
+                    "gateway": "172.31.128.65",
+                    "publicIp": "181.13.72.133",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963477",
+            "serial": "Q2GY-MQCX-AXS8",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:17Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.39.18",
+                    "gateway": "181.104.39.17",
+                    "publicIp": "181.104.39.18",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.126.147",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963495",
+            "serial": "Q2GY-MVCY-85N8",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:05Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.48.74",
+                    "gateway": "181.104.48.73",
+                    "publicIp": "181.104.48.74",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.77.175",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963421",
+            "serial": "Q2GY-N27N-EGRQ",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:04Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "failed",
+                    "ip": "181.104.35.42",
+                    "gateway": "181.104.35.41",
+                    "publicIp": "0.0.0.0",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "active",
+                    "ip": "172.31.128.8",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.125.184",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963200",
+            "serial": "Q2GY-N3VC-AS9V",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:02Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "190.226.226.66",
+                    "gateway": "190.226.226.65",
+                    "publicIp": "190.226.226.66",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.68.202",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963335",
+            "serial": "Q2GY-N4RW-LFDS",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:08Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.30.186",
+                    "gateway": "181.104.30.185",
+                    "publicIp": "181.104.30.186",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.120.185",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963394",
+            "serial": "Q2GY-N76J-TK5C",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:21Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "172.31.128.5",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.120.171",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "not connected",
+                    "ip": null,
+                    "gateway": null,
+                    "publicIp": null,
+                    "primaryDns": null,
+                    "secondaryDns": null,
+                    "ipAssignedBy": null
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963198",
+            "serial": "Q2GY-NEZR-BC59",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:56Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.7.10",
+                    "gateway": "181.104.7.9",
+                    "publicIp": "181.104.7.10",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.125.32",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963474",
+            "serial": "Q2GY-NJS4-JJTC",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:25Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.35.202",
+                    "gateway": "181.104.35.201",
+                    "publicIp": "181.104.35.202",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.124.148",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963369",
+            "serial": "Q2GY-P63R-3X47",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:19Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "186.153.120.34",
+                    "gateway": "186.153.120.33",
+                    "publicIp": "186.153.120.34",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.134.18",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963751",
+            "serial": "Q2GY-P747-P4TM",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:45Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.63.234",
+                    "gateway": "181.104.63.233",
+                    "publicIp": "181.104.63.234",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.6",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.64.68",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963259",
+            "serial": "Q2GY-PDY5-LJ27",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:10Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.29.130",
+                    "gateway": "181.104.29.129",
+                    "publicIp": "181.104.29.130",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.68.159",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963425",
+            "serial": "Q2GY-PEG2-YV7H",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:29Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.35.67",
+                    "gateway": "181.104.35.65",
+                    "publicIp": "181.104.35.67",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "1.1.1.1",
+                    "ipAssignedBy": "dhcp"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.70.108",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963460",
+            "serial": "Q2GY-PFXJ-DQV2",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:09Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "190.231.172.28",
+                    "gateway": "190.231.172.25",
+                    "publicIp": "190.231.172.28",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.72.240",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963762",
+            "serial": "Q2GY-PGFD-MVTF",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:07Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.64.218",
+                    "gateway": "181.104.64.217",
+                    "publicIp": "181.104.64.218",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.7",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.126.93",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963252",
+            "serial": "Q2GY-PJ69-UVMV",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:14Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.12.111.70",
+                    "gateway": "181.12.111.65",
+                    "publicIp": "181.12.111.70",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.126.227",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963743",
+            "serial": "Q2GY-PKB7-4PF2",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-09-23T19:56:42Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "not connected",
+                    "ip": null,
+                    "gateway": null,
+                    "publicIp": null,
+                    "primaryDns": null,
+                    "secondaryDns": null,
+                    "ipAssignedBy": null
+                },
+                {
+                    "interface": "wan2",
+                    "status": "not connected",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.135.22",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963485",
+            "serial": "Q2GY-PKV3-KWE7",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:23Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.13.191.68",
+                    "gateway": "181.13.191.65",
+                    "publicIp": "181.13.191.68",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.124.249",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963727",
+            "serial": "Q2GY-PP7U-3N6W",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:52Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.62.210",
+                    "gateway": "181.104.62.209",
+                    "publicIp": "181.104.62.210",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "0.0.0.0",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.5",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.76.236",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963476",
+            "serial": "Q2GY-PP9H-P729",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:59Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "190.231.173.12",
+                    "gateway": "190.231.173.9",
+                    "publicIp": "190.231.173.12",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.73.32",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963387",
+            "serial": "Q2GY-PPSE-NBKE",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:25Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.98.20.155",
+                    "gateway": "181.98.20.153",
+                    "publicIp": "181.98.20.155",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.6",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.128.237",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963255",
+            "serial": "Q2GY-PQMZ-9ZRX",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:02Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.30.66",
+                    "gateway": "181.104.30.65",
+                    "publicIp": "181.104.30.66",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.121.242",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963417",
+            "serial": "Q2GY-PRSQ-BJDV",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:54Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.98.20.162",
+                    "gateway": "181.98.20.161",
+                    "publicIp": "181.98.20.162",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.77.139",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963332",
+            "serial": "Q2GY-PURL-FD27",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:11Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.15.117.130",
+                    "gateway": "181.15.117.129",
+                    "publicIp": "181.15.117.130",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.66.105",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963201",
+            "serial": "Q2GY-PWJ5-BWB7",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:23Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.5.50",
+                    "gateway": "181.104.5.49",
+                    "publicIp": "181.104.5.50",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.133.222",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963223",
+            "serial": "Q2GY-PX6U-5Q9G",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:18Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "190.231.173.2",
+                    "gateway": "190.231.173.1",
+                    "publicIp": "190.231.173.2",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.5",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.120.157",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963247",
+            "serial": "Q2GY-PZNM-T72S",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:26Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.7.50",
+                    "gateway": "181.104.7.49",
+                    "publicIp": "181.104.7.50",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.121.88",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963472",
+            "serial": "Q2GY-Q22V-Y7NF",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:05Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.13.225.172",
+                    "gateway": "181.13.225.169",
+                    "publicIp": "181.13.225.172",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.9",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.120.175",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963732",
+            "serial": "Q2GY-Q23K-4LWB",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:11Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.62.218",
+                    "gateway": "181.104.62.217",
+                    "publicIp": "181.104.62.218",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "not connected",
+                    "ip": null,
+                    "gateway": null,
+                    "publicIp": null,
+                    "primaryDns": null,
+                    "secondaryDns": null,
+                    "ipAssignedBy": null
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963773",
+            "serial": "Q2GY-Q32B-RC5J",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-01T12:07:14Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "not connected",
+                    "ip": null,
+                    "gateway": null,
+                    "publicIp": null,
+                    "primaryDns": null,
+                    "secondaryDns": null,
+                    "ipAssignedBy": null
+                },
+                {
+                    "interface": "wan2",
+                    "status": "failed",
+                    "ip": "172.31.128.5",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.131.87",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963721",
+            "serial": "Q2GY-Q357-HSE3",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:08Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.63.18",
+                    "gateway": "181.104.63.17",
+                    "publicIp": "181.104.63.18",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.5",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.126.80",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963771",
+            "serial": "Q2GY-Q5YZ-QVMP",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:59Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.63.250",
+                    "gateway": "181.104.63.249",
+                    "publicIp": "181.104.63.250",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.133.57",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963616",
+            "serial": "Q2GY-Q684-MW2W",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:53Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.51.34",
+                    "gateway": "181.104.51.33",
+                    "publicIp": "181.104.51.34",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.67.43",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963327",
+            "serial": "Q2GY-Q699-MKBC",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:18Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.30.114",
+                    "gateway": "181.104.30.113",
+                    "publicIp": "181.104.30.114",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.69.198",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963310",
+            "serial": "Q2GY-Q6H7-SYXS",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:17Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.30.74",
+                    "gateway": "181.104.30.73",
+                    "publicIp": "181.104.30.74",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.128.140",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963323",
+            "serial": "Q2GY-Q6HJ-MZCM",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:21Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.29.210",
+                    "gateway": "181.104.29.209",
+                    "publicIp": "181.104.29.210",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.189.196",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963199",
+            "serial": "Q2GY-Q87W-PBY6",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:20Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.6.242",
+                    "gateway": "181.104.6.241",
+                    "publicIp": "181.104.6.242",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.5",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.77.232",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963339",
+            "serial": "Q2GY-QCMX-6YJW",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:54Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.85.156.219",
+                    "gateway": "181.85.156.217",
+                    "publicIp": "181.85.156.219",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.190.199",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963384",
+            "serial": "Q2GY-QKRT-DP6M",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:14Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.10.198.66",
+                    "gateway": "181.10.198.65",
+                    "publicIp": "181.10.198.66",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.68",
+                    "gateway": "172.31.128.65",
+                    "publicIp": "181.9.128.73",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963349",
+            "serial": "Q2GY-QLJH-NTKG",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:53Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.31.122",
+                    "gateway": "181.104.31.121",
+                    "publicIp": "181.104.31.122",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.130.203",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963345",
+            "serial": "Q2GY-QM8L-Y43T",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:23Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.31.98",
+                    "gateway": "181.104.31.97",
+                    "publicIp": "181.104.31.98",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.67.63",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963416",
+            "serial": "Q2GY-QVUG-6LHX",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:53Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.38.18",
+                    "gateway": "181.104.38.17",
+                    "publicIp": "181.104.38.18",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.65.185",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963769",
+            "serial": "Q2GY-QW8D-DCAC",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:22Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.64.226",
+                    "gateway": "181.104.64.225",
+                    "publicIp": "181.104.64.226",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "failed",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "0.0.0.0",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963778",
+            "serial": "Q2GY-QWEA-R4XH",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:20:56Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.86.90",
+                    "gateway": "181.104.86.89",
+                    "publicIp": "181.104.86.90",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "not connected",
+                    "ip": null,
+                    "gateway": null,
+                    "publicIp": null,
+                    "primaryDns": null,
+                    "secondaryDns": null,
+                    "ipAssignedBy": null
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963459",
+            "serial": "Q2GY-QWVR-MKPN",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:19Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "190.231.172.36",
+                    "gateway": "190.231.172.33",
+                    "publicIp": "190.231.172.36",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.68",
+                    "gateway": "172.31.128.65",
+                    "publicIp": "181.9.129.165",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963324",
+            "serial": "Q2GY-QXG8-DZQA",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:27Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "181.104.30.98",
+                    "gateway": "181.104.30.97",
+                    "publicIp": "181.104.30.98",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.13.75.16",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023963171",
+            "serial": "Q2GY-TVMB-T42F",
+            "model": "MX67W",
+            "highAvailability": {
+                "enabled": false,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:18Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "200.73.186.5",
+                    "gateway": "200.73.186.1",
+                    "publicIp": "200.73.186.5",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "ready",
+                    "ip": "172.31.128.4",
+                    "gateway": "172.31.128.1",
+                    "publicIp": "181.9.132.45",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "dhcp"
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023962887",
+            "serial": "Q2TW-7QT7-CXR9",
+            "model": "MX450",
+            "highAvailability": {
+                "enabled": true,
+                "role": "spare"
+            },
+            "lastReportedAt": "2025-10-03T13:21:10Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "200.73.186.4",
+                    "gateway": "200.73.186.1",
+                    "publicIp": "200.73.186.4",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "not connected",
+                    "ip": null,
+                    "gateway": null,
+                    "publicIp": null,
+                    "primaryDns": null,
+                    "secondaryDns": null,
+                    "ipAssignedBy": null
+                }
+            ]
+        },
+        {
+            "networkId": "L_579838452023962887",
+            "serial": "Q2TW-CUMX-VD49",
+            "model": "MX450",
+            "highAvailability": {
+                "enabled": true,
+                "role": "primary"
+            },
+            "lastReportedAt": "2025-10-03T13:21:27Z",
+            "uplinks": [
+                {
+                    "interface": "wan1",
+                    "status": "active",
+                    "ip": "200.73.186.3",
+                    "gateway": "200.73.186.1",
+                    "publicIp": "200.73.186.3",
+                    "primaryDns": "8.8.8.8",
+                    "secondaryDns": "8.8.4.4",
+                    "ipAssignedBy": "static"
+                },
+                {
+                    "interface": "wan2",
+                    "status": "not connected",
+                    "ip": null,
+                    "gateway": null,
+                    "publicIp": null,
+                    "primaryDns": null,
+                    "secondaryDns": null,
+                    "ipAssignedBy": null
+                }
+            ]
+        }
+    ],
+    "redes": [
+        {
+            "serial": "Q2GY-L4D7-WJ5D",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.6.202",
+                    "publicIp": "181.104.6.202",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.7",
+                    "publicIp": "181.13.81.71",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-M2YZ-4EW8",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.31.106",
+                    "publicIp": "181.104.31.106",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-M8CK-5HGX",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.231.173.212",
+                    "publicIp": "190.231.173.212",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.13.66.228",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-M8PT-E2K8",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.85.159.186",
+                    "publicIp": "181.85.159.186",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.64.67",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-M8ZA-WJKU",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.98.22.211",
+                    "publicIp": "181.98.22.211",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.134.217",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MATR-27AA",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.15.142.82",
+                    "publicIp": "181.15.142.82",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.69",
+                    "publicIp": "181.9.133.255",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MAVK-X76T",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.231.173.131",
+                    "publicIp": "190.231.173.131",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.126.109",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MBGQ-WK5E",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.34.10",
+                    "publicIp": "181.104.34.10",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.9.190.182",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MC2W-RXYJ",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.8.154",
+                    "publicIp": "181.104.8.154",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.68.81",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MCZJ-XZLT",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.63.35",
+                    "publicIp": "181.104.63.35",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.13.77.126",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MDMY-CQJW",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.63.210",
+                    "publicIp": "181.104.63.210",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.13.79.50",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MGDT-Y455",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.29.82",
+                    "publicIp": "181.104.29.82",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.79.145",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MGU7-2P32",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "192.168.0.32",
+                    "publicIp": "186.22.245.142",
+                    "ifaces": "not connected"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.80.97",
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MMZP-FVBH",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.32.115",
+                    "publicIp": "0.0.0.0",
+                    "ifaces": "failed"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.190.219",
+                    "ifaces": "failed"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MNHL-JBFB",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.63.243",
+                    "publicIp": "181.104.63.243",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.68",
+                    "publicIp": "181.13.72.133",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MQCX-AXS8",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.39.18",
+                    "publicIp": "181.104.39.18",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.126.147",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MVCY-85N8",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.48.74",
+                    "publicIp": "181.104.48.74",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.77.175",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-N27N-EGRQ",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.35.42",
+                    "publicIp": "0.0.0.0",
+                    "ifaces": "failed"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.8",
+                    "publicIp": "181.9.125.184",
+                    "ifaces": "active"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-N3VC-AS9V",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.226.226.66",
+                    "publicIp": "190.226.226.66",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.68.202",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-N4RW-LFDS",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.30.186",
+                    "publicIp": "181.104.30.186",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.120.185",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-N76J-TK5C",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.9.120.171",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-NEZR-BC59",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.7.10",
+                    "publicIp": "181.104.7.10",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.125.32",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-NJS4-JJTC",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.35.202",
+                    "publicIp": "181.104.35.202",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.124.148",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-P63R-3X47",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "186.153.120.34",
+                    "publicIp": "186.153.120.34",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.134.18",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-P747-P4TM",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.63.234",
+                    "publicIp": "181.104.63.234",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.6",
+                    "publicIp": "181.13.64.68",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PDY5-LJ27",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.29.130",
+                    "publicIp": "181.104.29.130",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.68.159",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PEG2-YV7H",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.35.67",
+                    "publicIp": "181.104.35.67",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.70.108",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PFXJ-DQV2",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.231.172.28",
+                    "publicIp": "190.231.172.28",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.72.240",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PGFD-MVTF",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.64.218",
+                    "publicIp": "181.104.64.218",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.7",
+                    "publicIp": "181.9.126.93",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PJ69-UVMV",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.12.111.70",
+                    "publicIp": "181.12.111.70",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.126.227",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PKB7-4PF2",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.135.22",
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PKV3-KWE7",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.13.191.68",
+                    "publicIp": "181.13.191.68",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.124.249",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PP7U-3N6W",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.62.210",
+                    "publicIp": "181.104.62.210",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.13.76.236",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PP9H-P729",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.231.173.12",
+                    "publicIp": "190.231.173.12",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.73.32",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PPSE-NBKE",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.98.20.155",
+                    "publicIp": "181.98.20.155",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.6",
+                    "publicIp": "181.9.128.237",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PQMZ-9ZRX",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.30.66",
+                    "publicIp": "181.104.30.66",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.121.242",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PRSQ-BJDV",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.98.20.162",
+                    "publicIp": "181.98.20.162",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.77.139",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PURL-FD27",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.15.117.130",
+                    "publicIp": "181.15.117.130",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.66.105",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PWJ5-BWB7",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.5.50",
+                    "publicIp": "181.104.5.50",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.133.222",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PX6U-5Q9G",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.231.173.2",
+                    "publicIp": "190.231.173.2",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.9.120.157",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PZNM-T72S",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.7.50",
+                    "publicIp": "181.104.7.50",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.121.88",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q22V-Y7NF",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.13.225.172",
+                    "publicIp": "181.13.225.172",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.9",
+                    "publicIp": "181.9.120.175",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q23K-4LWB",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.62.218",
+                    "publicIp": "181.104.62.218",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q32B-RC5J",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.9.131.87",
+                    "ifaces": "failed"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q357-HSE3",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.63.18",
+                    "publicIp": "181.104.63.18",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.9.126.80",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q5YZ-QVMP",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.63.250",
+                    "publicIp": "181.104.63.250",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.133.57",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q684-MW2W",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.51.34",
+                    "publicIp": "181.104.51.34",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.67.43",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q699-MKBC",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.30.114",
+                    "publicIp": "181.104.30.114",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.69.198",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q6H7-SYXS",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.30.74",
+                    "publicIp": "181.104.30.74",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.128.140",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q6HJ-MZCM",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.29.210",
+                    "publicIp": "181.104.29.210",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.189.196",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q87W-PBY6",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.6.242",
+                    "publicIp": "181.104.6.242",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.13.77.232",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QCMX-6YJW",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.85.156.219",
+                    "publicIp": "181.85.156.219",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.190.199",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QKRT-DP6M",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.10.198.66",
+                    "publicIp": "181.10.198.66",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.68",
+                    "publicIp": "181.9.128.73",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QLJH-NTKG",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.31.122",
+                    "publicIp": "181.104.31.122",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.130.203",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QM8L-Y43T",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.31.98",
+                    "publicIp": "181.104.31.98",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.67.63",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QVUG-6LHX",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.38.18",
+                    "publicIp": "181.104.38.18",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.65.185",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QW8D-DCAC",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.64.226",
+                    "publicIp": "181.104.64.226",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "0.0.0.0",
+                    "ifaces": "failed"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QWEA-R4XH",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.86.90",
+                    "publicIp": "181.104.86.90",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QWVR-MKPN",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.231.172.36",
+                    "publicIp": "190.231.172.36",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.68",
+                    "publicIp": "181.9.129.165",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QXG8-DZQA",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.30.98",
+                    "publicIp": "181.104.30.98",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.75.16",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-TVMB-T42F",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "200.73.186.5",
+                    "publicIp": "200.73.186.5",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.132.45",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2TW-7QT7-CXR9",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "200.73.186.4",
+                    "publicIp": "200.73.186.4",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2TW-CUMX-VD49",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "200.73.186.3",
+                    "publicIp": "200.73.186.3",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+{
+    "ok": true,
+    "Count": 63,
+    "redes": [
+        {
+            "serial": "Q2GY-L4D7-WJ5D",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.6.202",
+                    "publicIp": "181.104.6.202",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.7",
+                    "publicIp": "181.9.190.7",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-M2YZ-4EW8",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.31.106",
+                    "publicIp": "181.104.31.106",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-M8CK-5HGX",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.231.173.212",
+                    "publicIp": "190.231.173.212",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.13.66.228",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-M8PT-E2K8",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.85.159.186",
+                    "publicIp": "181.85.159.186",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.64.67",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-M8ZA-WJKU",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.98.22.211",
+                    "publicIp": "181.98.22.211",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.134.217",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MATR-27AA",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.15.142.82",
+                    "publicIp": "181.15.142.82",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.69",
+                    "publicIp": "181.9.133.255",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MAVK-X76T",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.231.173.131",
+                    "publicIp": "190.231.173.131",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.126.109",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MBGQ-WK5E",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.34.10",
+                    "publicIp": "181.104.34.10",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.9.190.182",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MC2W-RXYJ",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.8.154",
+                    "publicIp": "181.104.8.154",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.68.81",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MCZJ-XZLT",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.63.35",
+                    "publicIp": "181.104.63.35",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.13.77.126",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MDMY-CQJW",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.63.210",
+                    "publicIp": "181.104.63.210",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.13.79.50",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MGDT-Y455",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.29.82",
+                    "publicIp": "181.104.29.82",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.79.145",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MGU7-2P32",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "192.168.0.32",
+                    "publicIp": "186.22.245.142",
+                    "ifaces": "not connected"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.80.97",
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MMZP-FVBH",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.32.115",
+                    "publicIp": "0.0.0.0",
+                    "ifaces": "failed"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.190.219",
+                    "ifaces": "active"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MNHL-JBFB",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.63.243",
+                    "publicIp": "181.104.63.243",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.68",
+                    "publicIp": "181.13.72.133",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MQCX-AXS8",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.39.18",
+                    "publicIp": "181.104.39.18",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.126.147",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MVCY-85N8",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.48.74",
+                    "publicIp": "181.104.48.74",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.77.175",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-N27N-EGRQ",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.35.42",
+                    "publicIp": "0.0.0.0",
+                    "ifaces": "failed"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.8",
+                    "publicIp": "181.9.125.184",
+                    "ifaces": "active"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-N3VC-AS9V",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.226.226.66",
+                    "publicIp": "190.226.226.66",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.68.202",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-N4RW-LFDS",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.30.186",
+                    "publicIp": "181.104.30.186",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.120.185",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-N76J-TK5C",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.9.120.171",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-NEZR-BC59",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.7.10",
+                    "publicIp": "181.104.7.10",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.125.32",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-NJS4-JJTC",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.35.202",
+                    "publicIp": "181.104.35.202",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.124.148",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-P63R-3X47",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "186.153.120.34",
+                    "publicIp": "186.153.120.34",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.134.18",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-P747-P4TM",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.63.234",
+                    "publicIp": "181.104.63.234",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.6",
+                    "publicIp": "181.13.64.68",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PDY5-LJ27",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.29.130",
+                    "publicIp": "181.104.29.130",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.68.159",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PEG2-YV7H",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.35.67",
+                    "publicIp": "181.104.35.67",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.70.108",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PFXJ-DQV2",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.231.172.28",
+                    "publicIp": "190.231.172.28",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.72.240",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PGFD-MVTF",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.64.218",
+                    "publicIp": "181.104.64.218",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.7",
+                    "publicIp": "181.9.126.93",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PJ69-UVMV",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.12.111.70",
+                    "publicIp": "181.12.111.70",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.126.227",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PKB7-4PF2",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.135.22",
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PKV3-KWE7",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.13.191.68",
+                    "publicIp": "181.13.191.68",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.124.249",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PP7U-3N6W",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.62.210",
+                    "publicIp": "181.104.62.210",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.13.76.236",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PP9H-P729",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.231.173.12",
+                    "publicIp": "190.231.173.12",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.73.32",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PPSE-NBKE",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.98.20.155",
+                    "publicIp": "181.98.20.155",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.6",
+                    "publicIp": "181.9.128.237",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PQMZ-9ZRX",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.30.66",
+                    "publicIp": "181.104.30.66",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.121.242",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PRSQ-BJDV",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.98.20.162",
+                    "publicIp": "181.98.20.162",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.77.139",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PURL-FD27",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.15.117.130",
+                    "publicIp": "181.15.117.130",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.66.105",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PWJ5-BWB7",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.5.50",
+                    "publicIp": "181.104.5.50",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.133.222",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PX6U-5Q9G",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.231.173.2",
+                    "publicIp": "190.231.173.2",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.9.120.157",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-PZNM-T72S",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.7.50",
+                    "publicIp": "181.104.7.50",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.121.88",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q22V-Y7NF",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.13.225.172",
+                    "publicIp": "181.13.225.172",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.9",
+                    "publicIp": "181.9.120.175",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q23K-4LWB",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.62.218",
+                    "publicIp": "181.104.62.218",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q32B-RC5J",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.9.131.87",
+                    "ifaces": "failed"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q357-HSE3",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.63.18",
+                    "publicIp": "181.104.63.18",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.9.126.80",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q5YZ-QVMP",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.63.250",
+                    "publicIp": "181.104.63.250",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.133.57",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q684-MW2W",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.51.34",
+                    "publicIp": "181.104.51.34",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.81.191",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q699-MKBC",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.30.114",
+                    "publicIp": "181.104.30.114",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.69.198",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q6H7-SYXS",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.30.74",
+                    "publicIp": "181.104.30.74",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.128.140",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q6HJ-MZCM",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.29.210",
+                    "publicIp": "181.104.29.210",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.189.196",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-Q87W-PBY6",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.6.242",
+                    "publicIp": "181.104.6.242",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.13.77.232",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QCMX-6YJW",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.85.156.219",
+                    "publicIp": "181.85.156.219",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.190.199",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QKRT-DP6M",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.10.198.66",
+                    "publicIp": "181.10.198.66",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.68",
+                    "publicIp": "181.9.128.73",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QLJH-NTKG",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.31.122",
+                    "publicIp": "181.104.31.122",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.130.203",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QM8L-Y43T",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.31.98",
+                    "publicIp": "181.104.31.98",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.67.63",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QVUG-6LHX",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.38.18",
+                    "publicIp": "181.104.38.18",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.65.185",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QW8D-DCAC",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.64.226",
+                    "publicIp": "181.104.64.226",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "0.0.0.0",
+                    "ifaces": "failed"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QWEA-R4XH",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.86.90",
+                    "publicIp": "181.104.86.90",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QWVR-MKPN",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "190.231.172.36",
+                    "publicIp": "190.231.172.36",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.68",
+                    "publicIp": "181.9.129.165",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-QXG8-DZQA",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.30.98",
+                    "publicIp": "181.104.30.98",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.75.16",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-TVMB-T42F",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "200.73.186.5",
+                    "publicIp": "200.73.186.5",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.132.45",
+                    "ifaces": "ready"
+                }
+            ]
+        },
+        {
+            "serial": "Q2TW-7QT7-CXR9",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "200.73.186.4",
+                    "publicIp": "200.73.186.4",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2TW-CUMX-VD49",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "200.73.186.3",
+                    "publicIp": "200.73.186.3",
+                    "ifaces": "active"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+{
+    "ok": true,
+    "Count": 63,
+    "redes": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        {
+            "serial": "Q2GY-MGU7-2P32",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "192.168.0.32",
+                    "publicIp": "186.22.245.142",
+                    "ifaces": "not connected"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.13.80.97",
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        {
+            "serial": "Q2GY-MMZP-FVBH",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.32.115",
+                    "publicIp": "0.0.0.0",
+                    "ifaces": "failed"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.190.219",
+                    "ifaces": "active"
+                }
+            ]
+        },
+        false,
+        false,
+        false,
+        {
+            "serial": "Q2GY-N27N-EGRQ",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": "181.104.35.42",
+                    "publicIp": "0.0.0.0",
+                    "ifaces": "failed"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.8",
+                    "publicIp": "181.9.125.184",
+                    "ifaces": "active"
+                }
+            ]
+        },
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        {
+            "serial": "Q2GY-PKB7-4PF2",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.4",
+                    "publicIp": "181.9.135.22",
+                    "ifaces": "not connected"
+                }
+            ]
+        },
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        {
+            "serial": "Q2GY-Q32B-RC5J",
+            "interfaces": [
+                {
+                    "iface": "wan1",
+                    "ip": null,
+                    "publicIp": null,
+                    "ifaces": "not connected"
+                },
+                {
+                    "iface": "wan2",
+                    "ip": "172.31.128.5",
+                    "publicIp": "181.9.131.87",
+                    "ifaces": "failed"
+                }
+            ]
+        },
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+    ]
+}
