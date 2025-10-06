@@ -79,7 +79,9 @@ console.log("RESPUSTAUPLINK", response.data)
             "serial": obj.serial,
             "networkId": await getNetworkName(obj.networkId),
            // "name": networkName,
-            "estado": obj.uplinks.filter( sitio => sitio.status !== 'active' && sitio.status !== 'ready' ) 
+           // "estado": obj.uplinks.filter( sitio => sitio.status !== 'active' && sitio.status !== 'ready' ) 
+           //cambio aca
+              "estdo": obj.uplinks
           }
         }
         ))
