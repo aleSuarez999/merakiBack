@@ -23,7 +23,7 @@ export const getDevicesByNetwork = async (req, res) => {
     });
   }
 };
-
+/*
 export const getNetworkName = async(networkId) => {
   try {
     const response = await MERAKI.get(`/networks/${networkId}`);
@@ -37,6 +37,28 @@ export const getNetworkName = async(networkId) => {
     return "N/C"
   }
 }
+*/
+// LO MISMO QUE ANTES PERO CON CACHE
+
+const networkNameCache = new Map();
+
+export const getNetworkName = async (networkId) => {
+  if (networkNameCache.has(networkId)) {
+    return networkNameCache.get(networkId);
+  }
+
+  try {
+    const response = await MERAKI.get(`/networks/${networkId}`);
+    const name = response.data.name;
+    networkNameCache.set(networkId, name);
+    return name;
+  } catch (error) {
+    console.log(`No se pudo obtener el nombre de ${networkId}: ${error.message}`);
+    return "N/C";
+  }
+};
+
+
 
 export const getNetwork = async (req, res) => {
   const { networkId } = req.params;

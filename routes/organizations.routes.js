@@ -10,9 +10,10 @@ route
 
     //.get("/", apiKeyAuth, getOrganizations )
     .get("/", jwtAuth, getOrganizations )
-    .get("/:orgId/networks/", jwtAuth, getNetworksByOrg)
+    .get("/:orgId/networks", jwtAuth, getNetworksByOrg)
     .get("/:orgId/devices/statuses/overview", jwtAuth, getStatusesOverview)
-    .get("/:orgId/appliance/uplink/statuses", getOrganizationApplianceUplinkStatuses)
+    .get("/:orgId/appliance/uplink/statuses", jwtAuth, getOrganizationApplianceUplinkStatuses)
+
 
     
     

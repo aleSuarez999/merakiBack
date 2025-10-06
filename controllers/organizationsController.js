@@ -7,10 +7,10 @@ export const getOrganizations = async (req, res) => {
     try {
     
         const response = await MERAKI.get("/organizations")
-        console.info(response.data)
-        response.data.forEach(org => {
-            console.log(`Org: ${org.name} (ID: ${org.id})`);
-        });
+        //console.info(response.data)
+        //response.data.forEach(org => {
+        //    console.log(`Org: ${org.name} (ID: ${org.id})`);
+        //});
 
         const nombresExcluidos = ["- TECO -", "NO USAR", "BAJA-"];
 
@@ -45,6 +45,7 @@ export const getNetworksByOrg = async (req, res) => {
   try {
     const response = await MERAKI.get(`/organizations/${orgId}/networks`);
     const Count = response.data.length
+    console.log("REDESXORG: ", response.data)
     res.json({ 
         ok: true, 
         Count,
@@ -62,11 +63,11 @@ export const getNetworksByOrg = async (req, res) => {
 
 export const getOrganizationApplianceUplinkStatuses = async (req, res) => {
   const { orgId } = req.params;
-  //console.log("orgid", orgId)
+  console.log("orgid", orgId)
   try {
     const response = await MERAKI.get(`/organizations/${orgId}/appliance/uplink/statuses`);
     
-console.log("RESPUSTAUPLINK", response.data)
+console.log("RESPUESTA_UPLINK", response.data)
     const Count = response.data.length
 
 
@@ -77,11 +78,11 @@ console.log("RESPUSTAUPLINK", response.data)
           //const networkName = await getNetworkName(obj.networkId);
           return {
             "serial": obj.serial,
-            "networkId": await getNetworkName(obj.networkId),
+            "networkId": obj.networkId,
            // "name": networkName,
            // "estado": obj.uplinks.filter( sitio => sitio.status !== 'active' && sitio.status !== 'ready' ) 
            //cambio aca
-              "estdo": obj.uplinks
+              "estado": obj.uplinks
           }
         }
         ))
