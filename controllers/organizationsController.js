@@ -70,32 +70,48 @@ export const getOrganizationApplianceUplinkStatuses = async (req, res) => {
 console.log("RESPUESTA_UPLINK", response.data)
     const Count = response.data.length
 
+  let activeUplinkCount = 0;
+  let uplinkCount = 0
 
   const redes = await Promise.all(
         response.data.map( async (obj) => {
   // solo si no está activa
        //uplinks[0].status
           //const networkName = await getNetworkName(obj.networkId);
+          activeUplinkCount = 0
+          uplinkCount = 0
+          // cuento cuantos uplinks hay y cuantos activos
+          obj.uplinks.map(upl => {
+            console.log("upl<>", upl)
+            if (upl.status === "active" || upl.status === "ready")
+              activeUplinkCount = activeUplinkCount + 1
+            if (upl.status !== "not connected")
+              uplinkCount = uplinkCount + 1
+          })
           return {
             "serial": obj.serial,
             "networkId": obj.networkId,
            // "name": networkName,
            // "estado": obj.uplinks.filter( sitio => sitio.status !== 'active' && sitio.status !== 'ready' ) 
            //cambio aca
-              "estado": obj.uplinks
+              "uplinkCount": uplinkCount,
+              "activeUplinkCount": activeUplinkCount,
+              "uplinks": obj.uplinks
+
           }
         }
         ))
         
-      
   
-
    // console.log("redes", redes)
 
     res.json({ 
-        ok: true, 
+        "ok": true, 
         Count,
-        redes
+        // por cada red se sabe cuantos uplinks tiene y cuantos activos
+        "uplinkCount": uplinkCount,
+        "activeUplinkCount": activeUplinkCount,
+        "networks": redes
     });
 
   } catch (error) {
