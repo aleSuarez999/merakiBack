@@ -1,3 +1,4 @@
+import Organization from "../models/Organization.js";
 import MERAKI from "../utils/merakiClient.js";
 import {  getNetworkName } from "./networksController.js";
 
@@ -12,13 +13,17 @@ export const getOrganizations = async (req, res) => {
         //    console.log(`Org: ${org.name} (ID: ${org.id})`);
         //});
 
-        const nombresExcluidos = ["- TECO -", "NO USAR", "BAJA-"];
+        const nombresExcluidos = ["- TECO -", "NO USAR", "BAJA-", "TECO-Inventario", "Backup de ORG", "TECO-LAB"];
 
 
         const orgs = response.data.filter(org =>
               !nombresExcluidos.some(excluido => org.name.includes(excluido))
             );
 
+         orgs.map( (org) => {
+          console.log("CREANDO ORG ", org)
+          createOrganizationBackend(org)
+        }  )
 
         //const Count = response.data.length;
         const Count = orgs.length;
@@ -45,7 +50,7 @@ export const getNetworksByOrg = async (req, res) => {
   try {
     const response = await MERAKI.get(`/organizations/${orgId}/networks`);
     const Count = response.data.length
-    console.log("REDESXORG: ", response.data)
+    //console.log("REDESXORG: ", response.data)
     res.json({ 
         ok: true, 
         Count,
@@ -60,14 +65,27 @@ export const getNetworksByOrg = async (req, res) => {
   }
 };
 
+export const getNetworksByOrgBackend = async (orgId) => {
+
+  try {
+    const response = await MERAKI.get(`/organizations/${orgId}/networks`);
+    //const Count = response.data.length
+    //console.log("REDESXORG: ", response.data)
+    return response.data
+
+  } catch (error) {
+    return error
+  }
+};
+
 
 export const getOrganizationApplianceUplinkStatuses = async (req, res) => {
   const { orgId } = req.params;
-  console.log("orgid", orgId)
+ // console.log("orgid", orgId)
   try {
     const response = await MERAKI.get(`/organizations/${orgId}/appliance/uplink/statuses`);
     
-console.log("RESPUESTA_UPLINK", response.data)
+//console.log("RESPUESTA_UPLINK", response.data)
     const Count = response.data.length
 
   let activeUplinkCount = 0;
@@ -82,7 +100,7 @@ console.log("RESPUESTA_UPLINK", response.data)
           uplinkCount = 0
           // cuento cuantos uplinks hay y cuantos activos
           obj.uplinks.map(upl => {
-            console.log("upl<>", upl)
+           // console.log("upl<>", upl)
             if (upl.status === "active" || upl.status === "ready")
               activeUplinkCount = activeUplinkCount + 1
             if (upl.status !== "not connected")
@@ -115,7 +133,7 @@ console.log("RESPUESTA_UPLINK", response.data)
     });
 
   } catch (error) {
-    console.log(error)
+    console.log(error.message)
     res.status(500).json({ 
         ok: false, 
         msg: error
@@ -124,10 +142,59 @@ console.log("RESPUESTA_UPLINK", response.data)
 };
 
 
+export const getOrganizationApplianceUplinkStatusesBackend = async (orgId) => {
+
+  
+  try {
+    const response = await MERAKI.get(`/organizations/${orgId}/appliance/uplink/statuses`);
+    
+    const Count = response.data.length
+
+  let activeUplinkCount = 0;
+  let uplinkCount = 0
+
+  // uplinks tiene un array con las redes y los estados de las interfaces
+
+  const uplinks = await Promise.all(
+        response.data.map( async (obj) => {
+
+          activeUplinkCount = 0
+          uplinkCount = 0
+          // cuento cuantos uplinks hay y cuantos activos
+          obj.uplinks.map(upl => {
+           // console.log("upl<>", upl)
+            if (upl.status === "active" || upl.status === "ready")
+              activeUplinkCount = activeUplinkCount + 1
+            if (upl.status !== "not connected")
+              uplinkCount = uplinkCount + 1
+          })
+          return {
+            "serial": obj.serial,
+            "networkId": obj.networkId,
+            "uplinkCount": uplinkCount,
+            "activeUplinkCount": activeUplinkCount,
+            "uplinks": obj.uplinks
+
+          }
+        }
+        ))
+        
+  
+   console.log("uplinks>", uplinks)
+
+    return  (uplinks);
+
+  } catch (error) {
+    console.log(error.message)
+    return error
+  }
+};
+
+
 
 export const getStatusesOverview = async (req, res) => {
   const { orgId } = req.params;
-  console.log("getStatusesOverview", orgId)
+ // console.log("getStatusesOverview", orgId)
   try {
     const response = await MERAKI.get(`/organizations/${orgId}/devices/statuses/overview`);
     const Count = response.data.length
@@ -191,3 +258,80 @@ const redes = response.data.map((obj) => (
            )
           })
            */
+
+
+export const createOrganization = async (req, res) => {
+
+  const {body} = req
+  console.log(body)
+
+  try {
+    const org = await Organization.findOne({id: body.id})
+
+    if (!org)
+    {
+        // si no existe la organizacion en la base la creo
+          const newOrg = await Organization.create({  ...body  })
+
+          res.json({
+            ok: true,
+            msg: "Org creada correctamente.",
+            org: newOrg
+        })
+    }
+
+  } catch (error) {
+   
+    console.error("createOrganization>", error.message)
+    
+    res.status(500).json({
+          ok: false,
+          msg: "Error de servidor.",
+          error
+      })
+    
+  }
+
+}
+
+export const createOrganizationBackend = async (orgN) => {
+
+  // para llamarlo desde al backend y que cree la base en mongo
+  console.log(orgN)
+  
+  try {
+    const org = await Organization.findOne({id: orgN.id})
+    
+    const redes = await getNetworksByOrgBackend(orgN.id)
+    //postOrg({id: org.id, name: org.name, redes})
+
+    const uplinks = await getOrganizationApplianceUplinkStatusesBackend(orgN.id)
+
+    if (!org)
+    {
+        // si no existe la organizacion en la base la creo
+          const newOrg = await Organization.findOneAndUpdate(
+        { id: orgN.id },
+        {
+          $set: {
+            name: orgN.name,
+            redes,
+            uplinks
+          }
+        },
+        { upsert: true, new: true }
+      );
+
+
+          return newOrg
+    }
+
+  } catch (error) {
+   
+    console.error("createOrganization>", error.message)
+    
+    return error
+    
+  }
+
+}

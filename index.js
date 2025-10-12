@@ -9,6 +9,7 @@ import summaryRoutes from "./routes/summary.routes.js";
 import authRoutes from './routes/auth.routes.js';
 
 import cors from "cors"
+import { dbMongo } from "./database/dbConnection.js"
 
 const server = express()
 
@@ -30,7 +31,7 @@ const api = async() => {
 
     server.use(express.json()) 
     // conexion a la db
-    // await dbConnection()
+    await dbMongo()
 
     server.use("/api/organizations", organizationsRoutes)
     server.use("/api/networks", networksRoutes)
