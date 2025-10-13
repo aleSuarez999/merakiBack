@@ -3,7 +3,7 @@ import MERAKI from "../utils/merakiClient.js";
 import {  getNetworkName } from "./networksController.js";
 
 
-export const getOrganizations = async (req, res) => {
+export const getOrganizations1 = async (req, res) => {
 
     try {
     
@@ -35,6 +35,57 @@ export const getOrganizations = async (req, res) => {
         })
     
     } catch (error) {
+        res.status(500).json({
+            ok: false, 
+            msg: error.message
+        })
+    
+    }
+
+
+}
+
+export const getOrganizations = async (req, res) => {
+    try {
+        const response = await MERAKI.get("/organizations")
+        const nombresExcluidos = ["- TECO -", "NO USAR", "BAJA-", "TECO-Inventario", "Backup de ORG", "TECO-LAB"];
+
+        const orgs = response.data.filter(org =>
+              !nombresExcluidos.some(excluido => org.name.includes(excluido))
+            );
+        const now = new Date();
+        console.log(now)
+        for (const org of orgs) {
+          //console.log("CREANDO ORG ", org)
+          //ubico la org
+          const orgData = await Organization.findOne({ id: org.id });
+          if (!orgData) {
+            console.log("No existe en MongoDB, creando...")
+            await createOrganizationBackend(org)
+            continue
+          }
+          console.log(orgData.updatedAt)
+          const diffMs = now - new Date(orgData.updatedAt)
+          const diffMin = diffMs / 1000 / 60
+
+        
+          if (diffMin > 5) {
+              console.log(`Actualizando ORG ${org.name}, última actualización hace ${diffMin.toFixed(2)} minutos`);
+              // remuevo el await para que no demore hasta que termine la ultima bajada en mostrar el grafico
+              createOrganizationBackend(org);
+            } else {
+              console.log(`ORG ${org.name} actualizada recientemente (${diffMin.toFixed(2)} min), no se actualiza`);
+            }
+
+        
+        }
+  res.json({
+              ok: true,
+              Count: orgs.length, 
+              orgs: orgs
+          })
+    } catch (error) {
+        console.log (error.message)
         res.status(500).json({
             ok: false, 
             msg: error.message
@@ -79,9 +130,10 @@ export const getNetworksByOrgBackend = async (orgId) => {
 };
 
 
-export const getOrganizationApplianceUplinkStatuses = async (req, res) => {
+export const getOrganizationApplianceUplinkStatuses1 = async (req, res) => {
   const { orgId } = req.params;
  // console.log("orgid", orgId)
+
   try {
     const response = await MERAKI.get(`/organizations/${orgId}/appliance/uplink/statuses`);
     
@@ -142,6 +194,120 @@ export const getOrganizationApplianceUplinkStatuses = async (req, res) => {
 };
 
 
+export const orgUpdated = async (orgId) => {
+  const orgMongo = await Organization.findOne({id: orgId})
+  // busco la fecha de update, si es vieja llamo a meraki, sino a mongo
+  const now = new Date();
+  if (orgMongo)
+  {
+    //console.log(orgMongo)
+    
+    const diffMs = now - new Date(orgMongo.updatedAt)
+    const diffMin = diffMs / 1000 / 60
+    console.log(diffMin)
+    if (diffMin > 5) {
+        console.log("actualizar");
+        return {
+          ok: false, 
+          org: []
+      }
+      } else {
+        return {
+          ok: true, 
+          org: orgMongo
+      }
+   }
+  }
+  else {
+        return {
+          ok: false, 
+          org: {}
+      }
+    }
+
+    // si es mayor a 5 min o no existe va meraki
+}
+
+export const getOrganizationApplianceUplinkStatuses = async (req, res) => {
+  const { orgId } = req.params;
+  const isUpdated = await orgUpdated(orgId)
+  console.log("isUpdated>", isUpdated.ok)
+  if ( !isUpdated.ok )
+  {
+
+    try {
+      const response = await MERAKI.get(`/organizations/${orgId}/appliance/uplink/statuses`);
+      
+      const Count = response.data.length
+
+      let activeUplinkCount = 0;
+      let uplinkCount = 0
+
+      const redes = await Promise.all(
+          response.data.map( async (obj) => {
+ 
+            activeUplinkCount = 0
+            uplinkCount = 0
+            // cuento cuantos uplinks hay y cuantos activos
+            obj.uplinks.map(upl => {
+            // console.log("upl<>", upl)
+              if (upl.status === "active" || upl.status === "ready")
+                activeUplinkCount = activeUplinkCount + 1
+              if (upl.status !== "not connected")
+                uplinkCount = uplinkCount + 1
+            })
+            return {
+              "serial": obj.serial,
+              "networkId": obj.networkId,
+            // "name": networkName,
+            // "estado": obj.uplinks.filter( sitio => sitio.status !== 'active' && sitio.status !== 'ready' ) 
+            //cambio aca
+                "uplinkCount": uplinkCount,
+                "activeUplinkCount": activeUplinkCount,
+                "uplinks": obj.uplinks
+
+            }
+          }
+          ))
+          
+    
+        // console.log("redes", redes)
+
+          res.json({ 
+              "ok": true, 
+              Count,
+              // por cada red se sabe cuantos uplinks tiene y cuantos activos
+              "uplinkCount": uplinkCount,
+              "activeUplinkCount": activeUplinkCount,
+              "networks": redes
+          });
+
+        } catch (error) {
+          console.log(error.message)
+          res.status(500).json({ 
+              ok: false, 
+              msg: error
+          });
+        }
+      }
+      else
+      {
+        console.info("traigo datos de mongo", isUpdated.org.uplinks)
+
+        res.json({ 
+              "ok": true, 
+              Count: isUpdated.org.Count,
+              // por cada red se sabe cuantos uplinks tiene y cuantos activos
+              "uplinkCount": isUpdated.org.uplinkCount,
+              "activeUplinkCount": isUpdated.org.activeUplinkCount,
+              "networks": isUpdated.org.redes,
+              "networks": isUpdated.org.uplinks
+          });
+      }
+
+}
+
+
 export const getOrganizationApplianceUplinkStatusesBackend = async (orgId) => {
 
   
@@ -180,7 +346,7 @@ export const getOrganizationApplianceUplinkStatusesBackend = async (orgId) => {
         ))
         
   
-   console.log("uplinks>", uplinks)
+   //console.log("uplinks>", uplinks)
 
     return  (uplinks);
 
@@ -297,7 +463,7 @@ export const createOrganization = async (req, res) => {
 export const createOrganizationBackend = async (orgN) => {
 
   // para llamarlo desde al backend y que cree la base en mongo
-  console.log(orgN)
+  //console.log(orgN)
   
   try {
     const org = await Organization.findOne({id: orgN.id})
@@ -307,7 +473,7 @@ export const createOrganizationBackend = async (orgN) => {
 
     const uplinks = await getOrganizationApplianceUplinkStatusesBackend(orgN.id)
 
-    if (!org)
+    if (org)
     {
         // si no existe la organizacion en la base la creo
           const newOrg = await Organization.findOneAndUpdate(
@@ -335,3 +501,4 @@ export const createOrganizationBackend = async (orgN) => {
   }
 
 }
+
