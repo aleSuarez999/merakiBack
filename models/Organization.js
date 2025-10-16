@@ -1,38 +1,4 @@
 import mongoose from 'mongoose';
-/*
-const organizationSchema = new mongoose.Schema({
-  id: String,
-  name: String,
-  networks: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Network' }],
-});
-
-export default mongoose.model('Organization', organizationSchema);
-*/
-/*
-const organizationSchema = new mongoose.Schema({
-  id: String,
-  name: String,
-  redes: [
-    {
-      id: String,
-      organizationId: String,
-      name: String,
-      productTypes: [String],
-      timeZone: String,
-      tags: [String],
-      enrollmentString: String,
-      url: String,
-      notes: String,
-      configTemplateId: String,
-      isBoundToConfigTemplate: Boolean,
-      isVirtual: Boolean
-    }
-  ], 
-  uplinks: Array
-});
-*/
-
-
 
 const uplinkSchema = new mongoose.Schema({
   serial: String,

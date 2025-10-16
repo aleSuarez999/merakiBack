@@ -48,10 +48,7 @@ export const getOrganizations1 = async (req, res) => {
 export const getOrganizations = async (req, res) => {
     try {
         const response = await MERAKI.get("/organizations")
-        const nombresExcluidos = ["- TECO -", "TECO - Municipalidad Villa Angela", 
-          "NO USAR", 
-          "AGUAS SANTAFESINAS",
-          "BAJA-", "TECO-Inventario", "Backup de ORG", "TECO-LAB", "TECO-Alpargatas"];
+        const nombresExcluidos = ["- TECO -", "NO USAR", "BAJA-", "TECO-Inventario", "Backup de ORG", "TECO-LAB"];
 
         const orgs = response.data.filter(org =>
               !nombresExcluidos.some(excluido => org.name.includes(excluido))
@@ -234,60 +231,10 @@ export const orgUpdated = async (orgId) => {
 
 export const getOrganizationApplianceUplinkStatuses = async (req, res) => {
   const { orgId } = req.params;
-  const isUpdated = await orgUpdated(orgId);
-
-  if (!isUpdated.ok) {
-    try {
-      const response = await MERAKI.get(`/organizations/${orgId}/appliance/uplink/statuses`);
-      const Count = response.data.length;
-
-      const redes = response.data.map(obj => {
-        let activeUplinkCount = 0;
-        let uplinkCount = 0;
-
-        obj.uplinks.forEach(upl => {
-          if (upl.status === "active" || upl.status === "ready") activeUplinkCount++;
-          if (upl.status !== "not connected") uplinkCount++;
-        });
-
-        return {
-          serial: obj.serial,
-          networkId: obj.networkId,
-          uplinkCount,
-          activeUplinkCount,
-          uplinks: obj.uplinks
-        };
-      });
-
-      res.json({
-        ok: true,
-        Count,
-        uplinkCount: redes.reduce((acc, r) => acc + r.uplinkCount, 0),
-        activeUplinkCount: redes.reduce((acc, r) => acc + r.activeUplinkCount, 0),
-        networks: redes
-      });
-    } catch (error) {
-      console.log(error.message);
-      res.status(500).json({ ok: false, msg: error.message });
-    }
-  } else {
-    console.info("Datos desde MongoDB:", isUpdated.org.name, isUpdated.org.updatedAt);
-    res.json({
-      ok: true,
-      Count: isUpdated.org.uplinks?.length || 0,
-      uplinkCount: isUpdated.org.uplinks?.reduce((acc, r) => acc + r.uplinkCount, 0),
-      activeUplinkCount: isUpdated.org.uplinks?.reduce((acc, r) => acc + r.activeUplinkCount, 0),
-      networks: isUpdated.org.uplinks
-    });
-  }
-};
-
-export const getOrganizationApplianceUplinkStatuses_ok = async (req, res) => {
-  const { orgId } = req.params;
   const isUpdated = await orgUpdated(orgId)
   console.log("isUpdated1>", isUpdated.ok)
  // if ( !isUpdated.ok )
-  if (!isUpdated.ok)
+  if (2 == 2)
   {
 
     try {
@@ -507,38 +454,6 @@ export const getOrganizationApplianceUplinkStatusesROOTO = async (req, res) => {
 
 
 export const getOrganizationApplianceUplinkStatusesBackend = async (orgId) => {
-  try {
-    const response = await MERAKI.get(`/organizations/${orgId}/appliance/uplink/statuses`);
-    const Count = response.data.length;
-
-    const uplinks = await Promise.all(
-      response.data.map(async (obj) => {
-        let activeUplinkCount = 0;
-        let uplinkCount = 0;
-
-        obj.uplinks.forEach(upl => {
-          if (upl.status === "active" || upl.status === "ready") activeUplinkCount++;
-          if (upl.status !== "not connected") uplinkCount++;
-        });
-
-        return {
-          serial: obj.serial,
-          networkId: obj.networkId,
-          uplinkCount,
-          activeUplinkCount,
-          uplinks: obj.uplinks
-        };
-      })
-    );
-
-    return uplinks; // ✅ este return es necesario
-  } catch (error) {
-    console.log(error.message);
-    return []; // o null, pero mejor devolver array vacío
-  }
-};
-
-export const getOrganizationApplianceUplinkStatusesBackendsinret = async (orgId) => {
 
   
   try {
@@ -619,10 +534,6 @@ export const createOrganization = async (req, res) => {
 
     if (!org)
     {
-      
-          const nowLocal = new Date().toLocaleString("en-US", { timeZone: "America/Argentina/Buenos_Aires" });
-          const localDate = new Date(nowLocal);
-
         // si no existe la organizacion en la base la creo
           const newOrg = await Organization.create({  ...body  })
 
@@ -630,7 +541,6 @@ export const createOrganization = async (req, res) => {
             ok: true,
             msg: "Org creada correctamente.",
             org: newOrg
-         
         })
     }
 
@@ -649,105 +559,10 @@ export const createOrganization = async (req, res) => {
 }
 
 export const createOrganizationBackend = async (orgN) => {
-  try {
-    const org = await Organization.findOne({ id: orgN.id });
-
-    if (!org) {
-      console.log("No existe en MongoDB, creando...");
-
-      const redes = await getNetworksByOrgBackend(orgN.id);
-      const uplinks = await getOrganizationApplianceUplinkStatusesBackend(orgN.id);
-      if (redes.length > 0 && uplinks.length > 0) {
-        const newOrg = await Organization.create({
-          id: orgN.id,
-          name: orgN.name,
-          redes,
-          uplinks
-        });
-        return newOrg;
-      } else {
-          console.warn("Datos incompletos para crear organización:", orgN);
-          return false
-      }
-      
-    }
-
-    console.info("Actualizando organización:", org.name);
-
-    const redes = await getNetworksByOrgBackend(orgN.id);
-    const uplinks = await getOrganizationApplianceUplinkStatusesBackend(orgN.id);
-
-    const updatedOrg = await Organization.findOneAndUpdate(
-      { id: orgN.id },
-      {
-        $set: {
-          name: orgN.name,
-          redes,
-          uplinks
-        }
-      },
-      { upsert: true, new: true }
-    );
-
-    return updatedOrg;
-  } catch (error) {
-    console.error("createOrganizationBackend>", error.message);
-    return error;
-  }
-};
-
-export const createOrganizationBackends = async (orgN) => {
-  try {
-    const org = await Organization.findOne({ id: orgN.id });
-
-    if (!org) {
-      console.log("No existe en MongoDB, creando...");
-
-      const redes = await getNetworksByOrgBackend(orgN.id);
-      const uplinks = await getOrganizationApplianceUplinkStatusesBackend(orgN.id);
-    console.log("uplinks recibidos:", uplinks);
-      const newOrg = await Organization.create({
-        id: orgN.id,
-        name: orgN.name,
-        redes,
-        uplinks
-      });
-
-      return newOrg;
-    }
-
-    console.info("Actualizando organización:", org.name);
-
-    const redes = await getNetworksByOrgBackend(orgN.id);
-    const uplinks = await getOrganizationApplianceUplinkStatusesBackend(orgN.id);
-
-    const updatedOrg = await Organization.findOneAndUpdate(
-      { id: orgN.id },
-      {
-        $set: {
-          name: orgN.name,
-          redes,
-          uplinks
-        }
-      },
-      { upsert: true, new: true }
-    );
-
-    return updatedOrg;
-  } catch (error) {
-    console.error("createOrganizationBackend>", error.message);
-    return error;
-  }
-};
-
-export const createOrganizationBackend_nocrea = async (orgN) => {
 
   // para llamarlo desde al backend y que cree la base en mongo
   //console.log(orgN)
    
-  const nowLocal = new Date().toLocaleString("en-US", { timeZone: "America/Argentina/Buenos_Aires" });
-  const localDate = new Date(nowLocal);
-
   try {
     const org = await Organization.findOne({id: orgN.id})
     console.info("encontrado ", org.name)
