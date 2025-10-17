@@ -1,6 +1,6 @@
 import mysql from "mysql"
 import mongoose from "mongoose"
-
+/*
 export const dbConnection = async() => {
     const conexion = mysql.createConnection({
     host: "localhost",
@@ -16,7 +16,7 @@ export const dbConnection = async() => {
             console.log("conexion exitosa")
     })
 }
-
+*/
 
 
 export const dbMongo = async() => {
